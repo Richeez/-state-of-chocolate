@@ -10,10 +10,18 @@ display: flex;
 align-items: center;
 justify-content: center;
 gap: 2rem;
+padding-block: 8.5rem;
 position: relative;
 flex-direction: column;
 background-color: var(--transparent-black);
 background-blend-mode:multiply;
+
+@media screen and (min-width: 45rem) {
+    min-height: 50vh;
+
+        
+        
+    }
 
 .main-header{
     display: flex;
