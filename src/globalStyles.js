@@ -15,7 +15,19 @@ const Globalstyles = createGlobalStyle`
   --black-color:#000000;
 }
 
+.header{
+  background-color: var(--dark-chocolate);
+  transition: all 1s ease-in-out;
+  height: 100px;
+  display: flex;
+  align-items: flex-end;
+  /* justify-content: flex-start; */
+  padding-top: 5rem ;
 
+  & > {
+    margin-top: 4rem;
+  }
+}
 .open{
   @media screen and (max-width: 40rem) {
     width: 50%;

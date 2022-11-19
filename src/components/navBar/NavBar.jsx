@@ -17,11 +17,13 @@ const NavBar = ({
   scrollToPage,
   home,
   services,
+  header,
+  isInView,
 }) => {
   return (
     <Header>
       <Menu toggleMenu={toggleMenu} menuBar={menuBar} />
-      <Nav>
+      <Nav className={isInView ? "" : "header"} ref={header}>
         <Brand>
           <BrandLogo src="images/logo1.png" alt="" />
         </Brand>

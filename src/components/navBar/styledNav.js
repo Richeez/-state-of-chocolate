@@ -1,8 +1,7 @@
 import styled from "styled-components";
 
 export const Header = styled.header`
-height: fit-content;
-padding: 1%;
+/* padding: 1%; */
 position: fixed;
 height: 4.4rem;
 z-index: 90;
@@ -28,7 +27,7 @@ opacity: 0;
 pointer-events: none;
 user-select: none;
 transition: all 1s ease-in-out;
-background-color: var(--lighter-chocolate);
+background-color: var(--dark-chocolate);
 top: -50%;
 margin-top: 8rem;
 color: var(--white-color);
@@ -53,6 +52,8 @@ gap: 2rem;
         opacity: 1;
         position: relative;
         pointer-events: all;
+        padding-right: 2rem;
+        /* padding-top: 4.5rem; */
 user-select: all;
 transition: all 1s ease-in;
         margin: 0;
@@ -83,9 +84,11 @@ export const NavLink = styled.li`
 list-style: none;
     cursor: pointer;
     position: relative;
-    /* display: block; */
+    outline: none;
+    width: 100%;
+    display: block;
     padding: .5rem 0;
-    white-space: nowrap;
+    /* white-space: nowrap; */
 
     &:hover::after,:focus::after{ 
     width: 100%;
@@ -111,6 +114,7 @@ list-style: none;
 `;
 export const Link = styled.a`
 text-decoration: none;
+outline: none;
 color: var(--white-color);
 text-transform: capitalize;
 
