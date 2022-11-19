@@ -23,26 +23,96 @@ justify-content: space-between;
 
 `;
 export const LinkCont = styled.ul`
-width: 50%;
+width: 0;
+opacity: 0;
+pointer-events: none;
+user-select: none;
+transition: all 1s ease-in-out;
 background-color: var(--lighter-chocolate);
 top: -50%;
-margin-top: 4rem;
+margin-top: 8rem;
+color: var(--white-color);
 border-radius: 1rem 0 0 1rem ;
 padding: 1rem;
 right: -2%;
-display: flex;
-display: none;
 flex-direction: column;
-height: 50vh;
+min-height: 10vh;
 position: absolute;
 align-items: center;
 justify-content: flex-start;
 gap: 2rem;
 
+
+
+
+@media screen and (min-width: 45rem) {
+        display: flex;
+        width: fit-content;
+        flex-direction: row;
+        height: 4.4rem;
+        opacity: 1;
+        position: relative;
+        pointer-events: all;
+user-select: all;
+transition: all 1s ease-in;
+        margin: 0;
+        background-color: unset;
+
+        
+        
+    }
+    
+    @media screen and (min-width: 64rem) {
+display: flex; 
+flex-direction: row;
+height: 4.4rem;
+opacity: 1;
+        position: relative;
+        pointer-events: all;
+user-select: all;
+transition: all 1s ease-in;
+
+
+
+    }
+
+
+
 `;
 export const NavLink = styled.li`
 list-style: none;
-cursor: pointer;
+    cursor: pointer;
+    position: relative;
+    /* display: block; */
+    padding: .5rem 0;
+    white-space: nowrap;
+
+    &:hover::after,:focus::after{ 
+    width: 100%;
+    opacity: 1;
+    transition: all 1s ease-in-out;
+    }
+
+
+    &::after,:focus::after {
+    content: '';
+    position: absolute;
+    width:0;
+    opacity: 0;
+    transition: all 1s ease-in-out;
+    background-color: var(--white-color);
+    height: .19rem;
+    bottom: 0;
+    left: 0;
+    /* transform: translateX(-50%); */
+    }
+
+
+`;
+export const Link = styled.a`
+text-decoration: none;
+color: var(--white-color);
+text-transform: capitalize;
 
 `;
 export const Brand = styled.div`
@@ -51,6 +121,9 @@ height: 5rem;
 display: flex;
 align-items: flex-end;
 justify-content: flex-start;
+@media screen and (max-width: 40rem) {
+margin-top : .5rem;
+  }
 
 `;
 export const BrandLogo = styled.img`

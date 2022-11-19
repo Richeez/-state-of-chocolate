@@ -1,11 +1,11 @@
 import React from "react";
 import { About, Home, Testimonial, Services } from "..";
 
-const MainContent = () => {
+const MainContent = ({ services, home }) => {
   return (
     <main>
-      <Home />
-      <Services />
+      <Home home={home} />
+      <Services services={services} />
       {/* <About />
       <Testimonial /> */}
     </main>

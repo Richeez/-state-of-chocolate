@@ -26,11 +26,12 @@ position: relative;
 flex-direction: column;
 padding: 1rem;
 border-radius: 1rem;
-width: clamp(400px, 2vw + 5px, 50rem);
+width: clamp( 200px, 45rem, 80vw);
 background: linear-gradient(to bottom right, var(--lighter-white-color), var(--lighter-white-color), var(--light-white-color));
 p{
     text-align: left;
     font-size: 2.5rem;
+    font-weight: bold;
     width: max-content;
     font-family: 'Tangerine', cursive;
     text-transform: capitalize;
@@ -38,7 +39,7 @@ p{
 }
 
 h1{
-    font-size: 2.3rem;
+    font-size: 2.2rem;
     text-align: center;
     text-transform: capitalize;
 }
