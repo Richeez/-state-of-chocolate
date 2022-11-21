@@ -8,6 +8,7 @@ function App() {
   const menu = useRef(null);
   const home = useRef(null);
   const services = useRef(null);
+  const contact = useRef(null);
   const [isInView, setIsInView] = useState(false);
 
   const callBackFunc = (entries) => {
@@ -59,13 +60,14 @@ function App() {
         header={header}
         scrollToPage={scrollToPage}
         home={home}
+        contact={contact}
         isInView={isInView}
         services={services}
         toggleMenu={toggleMenu}
         menuBar={menuBar}
         menu={menu}
       />
-      <MainContent home={home} services={services} />
+      <MainContent contact={contact} home={home} services={services} />
       <Footer />
     </>
   );

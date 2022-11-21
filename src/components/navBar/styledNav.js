@@ -27,8 +27,8 @@ opacity: 0;
 pointer-events: none;
 user-select: none;
 transition: all 1s ease-in-out;
-background-color: var(--dark-chocolate);
-top: -50%;
+background-color: var(--light-chocolate);
+top: -60%;
 margin-top: 8rem;
 color: var(--white-color);
 border-radius: 1rem 0 0 1rem ;
@@ -88,7 +88,8 @@ list-style: none;
     width: 100%;
     display: block;
     padding: .5rem 0;
-    /* white-space: nowrap; */
+    white-space: nowrap;
+    user-select: none;
 
     &:hover::after,:focus::after{ 
     width: 100%;

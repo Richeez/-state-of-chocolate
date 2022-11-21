@@ -12,7 +12,7 @@ export const StyledMenu = styled.div`
         justify-content: center;
 
     right: 5%;
-    top: 80%;
+    top: 60%;
     transform: translateY(-50%);
     z-index: 99;
 

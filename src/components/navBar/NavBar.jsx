@@ -18,6 +18,7 @@ const NavBar = ({
   home,
   services,
   header,
+  contact,
   isInView,
 }) => {
   return (
@@ -35,8 +36,9 @@ const NavBar = ({
           <NavLink>
             <Link onClick={() => scrollToPage(services)}>services</Link>
           </NavLink>
-          {/* <NavLink>testimonials</NavLink> */}
-          {/* <NavLink>meet us</NavLink> */}
+          <NavLink>
+            <Link onClick={() => scrollToPage(contact)}>contact us</Link>
+          </NavLink>
         </LinkCont>
       </Nav>
     </Header>

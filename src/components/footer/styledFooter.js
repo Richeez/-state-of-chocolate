@@ -9,10 +9,11 @@ export const StyledFooter = styled.div`
  font-weight: bolder;
  padding: 1%;
  gap: 1rem;
- color: var(--black-color);
+ background-color: var(--light-chocolate);
+ color: var(--white-color);
  text-transform: capitalize;
 
- .contact-us{
+ /* .contact-us{
     align-self: flex-start;
     a{
         text-decoration: none;
@@ -25,6 +26,6 @@ export const StyledFooter = styled.div`
         text-transform: lowercase;
 
     }
- }
+ } */
  `;
 

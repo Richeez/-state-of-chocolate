@@ -17,7 +17,7 @@ background-color: var(--transparent-black);
 background-blend-mode:multiply;
 
 @media screen and (min-width: 45rem) {
-    min-height: 50vh;
+    min-height: 100vh;
 
         
         
