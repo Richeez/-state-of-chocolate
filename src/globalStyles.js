@@ -168,7 +168,9 @@ body{
     padding: 0 2rem;
     margin-bottom: 1rem;
     border: 0;
-    border-radius: 2rem;
+    border-top-left-radius: 2rem;
+  border-bottom-right-radius: 2rem;
+
 
   }
   p{

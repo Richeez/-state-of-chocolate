@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const StyledContact = styled.div`
-
+position: relative;
 background-color: var(--light-chocolate);
 .contact{
     display: grid;
@@ -17,12 +17,22 @@ background-color: var(--light-chocolate);
         font-size: 1.2rem;
         width: 100%;
         border-radius: 25px;
-        padding: .5rem 4rem .5rem 1rem;
         outline: none;
          border:  1px solid var(--dark-chocolate);
 
         
     }
+
+    input{
+        padding: .5rem 4rem .5rem 1.5rem;
+
+    }
+
+    textarea{
+        resize: none;
+        padding: 1.5rem 4rem .5rem 1.5rem;
+    }
+
     input::placeholder, textarea::placeholder{
         text-transform: capitalize;
     }
@@ -45,12 +55,50 @@ background-color: var(--light-chocolate);
     }
 
     
-    textarea{
-        resize: none;
-        padding-top: 1rem;
+    
+}
+
+
+} 
+
+.responseBox{
+    .fail, .success{
+        width: 10rem;
+        height: max-content;
+        border-radius: 1rem 0 0 1rem;
+        padding: .5rem 1rem .9rem;
+        font-size: .9rem;
+        color: var(--white-color);
+        position: absolute;
+        top: 1%;
+        right: 3%;
+        user-select: none;
+        overflow: hidden;
+
+        /* &::after{
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 5px;
+            bottom: 5%;
+            border-radius: 20px 0 0 20px;
+            background-color: var(--white-color);
+
+        } */
+        p{
+            width: 100%;
+            text-align: center;
+
+        }
     }
+    .fail{
+        background-color: rgba(250, 0, 0, .775);
 
+    }
+    .success{
+        background-color: lightgreen;
 
-}    
+    }
+}
 
 `;

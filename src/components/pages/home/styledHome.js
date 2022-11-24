@@ -40,9 +40,10 @@ p{
     text-align: left;
     font-size: 2.5rem;
     font-weight: bold;
-    width: max-content;
+    width: 100%;
     font-family: 'Tangerine', cursive;
     text-transform: capitalize;
+    word-wrap: normal;
 
 }
 

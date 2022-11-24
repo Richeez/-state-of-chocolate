@@ -19,7 +19,7 @@ const Services = ({ services }) => {
             />
             <div className="text">
               <h3>affordable cost</h3>
-              <p>You can get chocolate bar as low as eight dollars </p>
+              <p>You can get chocolate bar as low as eight dollars plus shipping</p>
             </div>
           </div>
           <div className="item">

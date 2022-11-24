@@ -65,9 +65,7 @@ max-width: 90rem;
     box-shadow: 2px 2px 5px;
     align-self: stretch;
     
-    /* &:nth-of-type(1){
         
-    } */
 
     &:last-of-type{
             grid-column: span 1;
@@ -78,14 +76,16 @@ max-width: 90rem;
     @media screen and (min-width: 45rem) {
         &:last-of-type{
             grid-column: span 1 ;
-        height: 300px;
+        height: unset;
         
     }
+}
     @media screen and (min-width: 64rem) {
         &:last-of-type{
             grid-column: span 1;
         height: unset;
         }
+    }
     @media screen and (min-width: 83rem) {
         &:last-of-type{
             grid-column: span 1;
@@ -95,7 +95,7 @@ max-width: 90rem;
 
 
 
-    }
+
 
    /* &:hover .service {
         .service-desc{
@@ -103,9 +103,10 @@ max-width: 90rem;
             opacity: 1;
 
         }
+    }
         &:hover .overlay {
           opacity: 1;
-              /* overflow: hidden;
+         overflow: hidden;
         } */
         &:hover .service {
             img{
@@ -120,7 +121,7 @@ max-width: 90rem;
             position:relative;
             color: var(--white-color);
         
-            .overlay {
+            /* .overlay {
           width: 100%;
           height: 100%;
           position: absolute;
@@ -154,12 +155,11 @@ max-width: 90rem;
         font-size: 1rem;
         text-transform: capitalize;
         }
-        }
+        } */
             img{
                 width: 100%;
                 height: 100%;
                 object-fit: cover;
-
 
 
             }
